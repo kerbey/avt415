@@ -1,6 +1,98 @@
 body {
-	background-color: red;
+  	background: 
+	radial-gradient(circle at 40% 30%,#1111 4%,57%,#000 90%);
+    background-color: darkblue;
 }
-.g-body{
+/*.g-body {
 	opacity: 0.1;
+}*/
+.rectangle{
+  	height: 40px;
+  	width: 30px;
+  	background: 
+    radial-gradient( at 40% 30%,#1111 4%,57%,#000 90%);
+    background-color: green;
+}
+.rectanglespace{
+  	width: 0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 40px solid transparent;
+}
+.oval {
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 40% 30%,#1111 4%,57%,#000 90%);
+    background-color: orange;
+}
+.space {
+  	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+.space2 {
+  	width: 0;
+	height: 0;
+	border-left: 55px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+.space3 {
+  	width: 0;
+	height: 0;
+	border-left: 65px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 5px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+.space4 {
+  	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 5px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.triangle {
+
+  	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+.triangle-down {
+	width: 10;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 20px solid #555;
+}
+.triangle-down2 {
+	width: 10;
+	height: 10;
+	border-left: 15px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 20px solid #555;
+	border-bottom: 20px solid transparent;
+}
+/*div {
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}*/
+@keyframes myAnimation {
+  0%   {left:0px; top:0px;}/*stationary*/
+  /*25%  { left:200px; top:0px;}/*right*/
+  /*50%  { left:200px; top:200px;}/*down*/
+  75%  { left:0px; top:5px;}/*left*/
+  100% { left:0px; top:0px;}/*up*/
 }
